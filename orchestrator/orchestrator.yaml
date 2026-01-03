@@ -1,0 +1,24 @@
+projects:
+  grafana_app:
+    url: https://github.com/grepx-support/grepx-business-intelligence-lab.git
+    branch: main
+    target_dir: grafana_app
+    sparse_paths:
+      - dashboards/grafana
+
+  plotly_app:
+    url: https://github.com/grepx-support/grepx-business-intelligence-lab.git
+    branch: main
+    target_dir: plotly_app
+    sparse_paths:
+      - dashboards/plotly
+    dependencies:
+      - plotly-dashboard-libs
+
+
+dependencies:
+  plotly-dashboard-libs:
+    url: https://github.com/grepx-support/grepx-plotly-dashboard.git
+    branch: main
+    path: plotly_dashboard_libs
+    requirements: true
