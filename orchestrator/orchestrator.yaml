@@ -13,12 +13,12 @@ projects:
     sparse_paths:
       - dashboards/plotly
     dependencies:
-      - plotly-dashboard-libs
+      - grepx-plotly-libs
 
 
 dependencies:
-  plotly-dashboard-libs:
-    url: https://github.com/grepx-support/grepx-plotly-dashboard.git
+  grepx-plotly-libs:
+    url: https://github.com/grepx-support/grepx-plotly-libs.git
     branch: main
     path: plotly_dashboard_libs
     requirements: true
